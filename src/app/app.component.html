@@ -1,1 +1,12 @@
-<p>hello</p>
+<!-- test for use a dependency which provided in parent component and use in child component if you want test, make true the ngIf and see console -->
+<app-parent1 *ngIf="false"></app-parent1>
+
+<!-- test for instantiating a dependency which provided self component which used in multiple places -->
+<ng-container *ngIf="true">
+  <app-multiple-instance-test></app-multiple-instance-test>
+  <app-multiple-instance-test></app-multiple-instance-test>
+  <app-multiple-instance-test></app-multiple-instance-test>
+  <app-multiple-instance-test></app-multiple-instance-test>
+  <app-multiple-instance-test></app-multiple-instance-test>
+  <app-multiple-instance-test></app-multiple-instance-test>
+</ng-container>
