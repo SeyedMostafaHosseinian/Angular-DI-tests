@@ -5,8 +5,7 @@ import {LoggerService} from "../logger.service";
   selector: 'app-multiple-instance-test',
   templateUrl: './multiple-instance-test.component.html',
   styleUrls: ['./multiple-instance-test.component.scss'],
-  //
-  // providers: [LoggerService]
+  providers: [LoggerService]
 })
 export class MultipleInstanceTestComponent {
 
