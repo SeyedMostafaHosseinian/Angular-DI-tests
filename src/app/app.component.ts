@@ -8,7 +8,7 @@ import {LoggerService} from "./logger.service";
 })
 export class AppComponent {
   constructor(private _loggerService: LoggerService) {
-
+    this._loggerService.log('app-component');
   }
 
   title = 'angular-playground';
