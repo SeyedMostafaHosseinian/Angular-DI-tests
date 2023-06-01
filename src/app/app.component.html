@@ -2,7 +2,7 @@
 <app-parent1 *ngIf="false"></app-parent1>
 
 <!-- test for instantiating a dependency which provided self component which used in multiple places -->
-<ng-container *ngIf="true">
+<ng-container *ngIf="false">
   <app-multiple-instance-test></app-multiple-instance-test>
   <app-multiple-instance-test></app-multiple-instance-test>
   <app-multiple-instance-test></app-multiple-instance-test>
@@ -10,3 +10,6 @@
   <app-multiple-instance-test></app-multiple-instance-test>
   <app-multiple-instance-test></app-multiple-instance-test>
 </ng-container>
+
+<!-- test for @Self() in hierarchical DI -->
+<app-self *ngIf="false"></app-self>
