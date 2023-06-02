@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import {LoggerService} from "./logger.service";
 
 @Component({
@@ -8,9 +8,7 @@ import {LoggerService} from "./logger.service";
   providers: [LoggerService]
 })
 export class AppComponent {
-  constructor(private _loggerService: LoggerService) {
-    this._loggerService.log('app-component');
+  constructor(public loggerService: LoggerService) {
+    this.loggerService.log('app-component');
   }
-
-  title = 'angular-playground';
 }

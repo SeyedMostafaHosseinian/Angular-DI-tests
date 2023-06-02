@@ -1,21 +1,33 @@
-<!-- test for use a dependency which provided in parent component and use in child component if you want test, make true the ngIf and see console -->
-<app-parent1 *ngIf="false"></app-parent1>
+<div class="app-container">
+  <h1>app component container</h1>
+  <p> logger service instanceID: <b>{{loggerService.instanceID}}</b></p>
 
-<!-- test for instantiating a dependency which provided self component which used in multiple places -->
-<ng-container *ngIf="false">
-  <app-multiple-instance-test></app-multiple-instance-test>
-  <app-multiple-instance-test></app-multiple-instance-test>
-  <app-multiple-instance-test></app-multiple-instance-test>
-  <app-multiple-instance-test></app-multiple-instance-test>
-  <app-multiple-instance-test></app-multiple-instance-test>
-  <app-multiple-instance-test></app-multiple-instance-test>
-</ng-container>
+  <!-- test for use a dependency which provided in parent component and use in child component if you want test, make true the ngIf and see console -->
+  <app-parent1 *ngIf="false"></app-parent1>
+  <!-- test for instantiating a dependency which provided self component which used in multiple places -->
+  <ng-container *ngIf="false">
+    <app-multiple-instance-test></app-multiple-instance-test>
+    <app-multiple-instance-test></app-multiple-instance-test>
+    <app-multiple-instance-test></app-multiple-instance-test>
+    <app-multiple-instance-test></app-multiple-instance-test>
+    <app-multiple-instance-test></app-multiple-instance-test>
+    <app-multiple-instance-test></app-multiple-instance-test>
+  </ng-container>
 
-<!-- test for @Self() in hierarchical DI -->
-<app-self *ngIf="false"></app-self>
+  <!-- test for diff between providers & viewProviders -->
+  <ng-container *ngIf="true">
+    <app-view-providers>
+      <app-inspector></app-inspector>
+    </app-view-providers>
+  </ng-container>
 
-<!-- test for @SkipSelf() in hierarchical DI -->
-<app-skip-self *ngIf="false"></app-skip-self>
+  <!-- test for @Self() in hierarchical DI -->
+  <app-self *ngIf="false"></app-self>
 
-<!-- test for @Host() in hierarchical DI -->
-<app-host *ngIf="false"></app-host>
+  <!-- test for @SkipSelf() in hierarchical DI -->
+  <app-skip-self *ngIf="false"></app-skip-self>
+
+  <!-- test for @Host() in hierarchical DI -->
+  <app-host *ngIf="false"></app-host>
+
+</div>
