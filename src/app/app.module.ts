@@ -8,6 +8,7 @@ import { Child1Component } from './parent1/child1/child1.component';
 import { MultipleInstanceTestComponent } from './multiple-instance-test/multiple-instance-test.component';
 import { SelfComponent } from './self/self.component';
 import { SkipSelfComponent } from './skip-self/skip-self.component';
+import { HostComponent } from './host/host.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SkipSelfComponent } from './skip-self/skip-self.component';
     Child1Component,
     MultipleInstanceTestComponent,
     SelfComponent,
-    SkipSelfComponent
+    SkipSelfComponent,
+    HostComponent
   ],
   imports: [
     BrowserModule,
