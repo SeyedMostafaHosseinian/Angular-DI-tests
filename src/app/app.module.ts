@@ -10,6 +10,7 @@ import { SkipSelfComponent } from './skip-self/skip-self.component';
 import { HostComponent } from './host/host.component';
 import { ViewProvidersComponent } from './view-providers/view-providers.component';
 import { InspectorComponent } from './view-providers/inspector/inspector.component';
+import { HostChildComponent } from './host/host-child/host-child.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InspectorComponent } from './view-providers/inspector/inspector.compone
     SkipSelfComponent,
     HostComponent,
     ViewProvidersComponent,
-    InspectorComponent
+    InspectorComponent,
+    HostChildComponent
   ],
   imports: [
     BrowserModule,

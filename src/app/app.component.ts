@@ -5,7 +5,8 @@ import {LoggerService} from "./logger.service";
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [LoggerService]
+  // providers: [LoggerService],
+  viewProviders: [LoggerService]
 })
 export class AppComponent {
   constructor(public loggerService: LoggerService) {
