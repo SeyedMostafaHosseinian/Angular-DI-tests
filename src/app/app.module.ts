@@ -11,6 +11,7 @@ import { HostComponent } from './host/host.component';
 import { ViewProvidersComponent } from './view-providers/view-providers.component';
 import { InspectorComponent } from './view-providers/inspector/inspector.component';
 import { HostChildComponent } from './host/host-child/host-child.component';
+import { IteExampleComponent } from './injection-token/ite-example/ite-example.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HostChildComponent } from './host/host-child/host-child.component';
     HostComponent,
     ViewProvidersComponent,
     InspectorComponent,
-    HostChildComponent
+    HostChildComponent,
+    IteExampleComponent
   ],
   imports: [
     BrowserModule,

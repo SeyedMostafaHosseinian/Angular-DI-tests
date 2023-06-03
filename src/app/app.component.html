@@ -29,6 +29,16 @@
   <app-skip-self *ngIf="false"></app-skip-self>
 
   <!-- test for @Host() in hierarchical DI -->
-  <app-host *ngIf="true"></app-host>
+  <app-host *ngIf="false"></app-host>
+
+  <!-- example for inject a dependency by injection token -->
+  <ng-container *ngIf="true">
+    <app-ite-example></app-ite-example>
+    <app-ite-example></app-ite-example>
+    <app-ite-example></app-ite-example>
+    <app-ite-example></app-ite-example>
+    <app-ite-example></app-ite-example>
+  </ng-container>
 
 </div>
+
